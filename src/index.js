@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { BrowserRouter } from 'react-router-dom';
-import axios from "axios";
+/* import axios from "axios";
 
 //axios.defaults.baseURL = "http://localhost:3001";
 axios.defaults.baseURL = 'https://pi-videogames-back-production.up.railway.app/';
-
+ */
 
 ReactDOM.render(
   <Provider store={store}> {/*este componente hace que el store de Redux este disponible para TODA la app*/}
