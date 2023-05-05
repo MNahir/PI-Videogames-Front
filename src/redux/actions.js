@@ -33,7 +33,7 @@ FILTER_BY_GENRES,
 export const getAllVideogames = () => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get(`/videogames`);
+      const { data } = await axios.get('/videogames');
       return dispatch({
         type: GET_ALL_VIDEOGAMES,
         payload: data,
@@ -82,7 +82,7 @@ export const getVideogame = (id) => {
 export const getByGenres = () => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get(`/genres`);
+      const { data } = await axios.get('/genres');
       return dispatch({
         type: GET_BY_GENRES,
         payload: data,
@@ -135,7 +135,7 @@ export const filterByGenres = (payload) => {
 
 export const getPlatforms = () => {
   return async (dispatch) => {
-      const url = await axios.get(`/videogames`)
+      const url = await axios.get('/videogames')
       return dispatch({
           type: GET_PLATFORMS,
           payload: url.data,
